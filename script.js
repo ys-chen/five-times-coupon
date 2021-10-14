@@ -30,16 +30,16 @@ function showTable(data, highlight = '') {
   if (data.length > 0) {
     data.forEach(({ name, number }) => {
       const numberString = `
-      <div class="border rounded p-1 mx-1">
+      <div class="border rounded p-1 m-1">
         ${number
           .sort((a, b) => a - b)
           .map((num) => highlight.length > 0 ? num.replaceAll(highlight, `<span class="text-danger">${highlight}</span>`) : num)
-          .join('</div><div class="border rounded p-1 mx-1">')}
+          .join('</div><div class="border rounded p-1 m-1">')}
       </div>`;
       $tbody.append(`<tr><td class="text-nowrap"><strong>${name}</strong></td><td><div class="d-flex flex-wrap">${numberString}</div></td></tr>`);
     });
   } else {
-    $tbody.append('沒有中籤，過幾天再來吧😭!');
+    $tbody.append('<div class="text-danger">沒有中籤，過幾天再來吧😭!</div>');
   }
 }
 
