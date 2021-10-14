@@ -36,7 +36,7 @@ function showTable(data, highlight = '') {
           .map((num) => highlight.length > 0 ? num.replaceAll(highlight, `<span class="text-danger">${highlight}</span>`) : num)
           .join('</div><div class="border rounded p-1 mx-1">')}
       </div>`;
-      $tbody.append(`<tr><td><strong>${name}</strong></td><td><div class="d-flex">${numberString}</div></td></tr>`);
+      $tbody.append(`<tr><td class="text-nowrap"><strong>${name}</strong></td><td><div class="d-flex flex-wrap">${numberString}</div></td></tr>`);
     });
   } else {
     $tbody.append('沒有中籤，過幾天再來吧😭!');
