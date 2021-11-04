@@ -140,6 +140,10 @@ const FIVE_TIMES_NUM = [
       {
         count: 'W3',
         number: ['14', '269'],
+      },
+      {
+        count: 'W4',
+        number: ['69'],
       }
     ],
   },
