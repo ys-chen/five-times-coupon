@@ -199,7 +199,7 @@ function showTable(data, highlight = '') {
       });
     });
   } else {
-    $tbody.append('<div class="text-danger">沒有中籤，過幾天再來吧😭!</div>');
+    $tbody.append('<div class="text-danger">沒有中籤，你是國家級邊緣人😭!</div>');
   }
 }
 
