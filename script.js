@@ -207,7 +207,7 @@ showTable(FIVE_TIMES_NUM);
 
 $id.on('input', (e) => {
   let data = FIVE_TIMES_NUM;
-  const text = e?.target?.value;
+  const text = e.target.value;
 
   if (text.length > 0) {
     data = [];
